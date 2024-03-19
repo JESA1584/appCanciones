@@ -1,17 +1,17 @@
 let mysql = require("mysql");
 
 let conexion = mysql.createConnection({
-    host: "localhost:3306",
-    database: "Canciones",
-    user: "root",
+    host:"localhost",
+    database:"canciones",
+    user:"root",
     password:""
 });
 
 conexion.connect(function(err){
-    if (err){
+    if(err){
         throw err;
     }else{
-        console.log("conección exitosa");
+        console.log("conexion exitosa")
     }
 });
 conexion.end();
